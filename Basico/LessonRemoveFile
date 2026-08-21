@@ -1,0 +1,53 @@
+import java.io.File;
+import java.util.Scanner;
+
+// 09:13 21/08/2026
+// Sem IDE específica
+// Remoção de arquivo por opção
+// Versão 1.5
+// Autor: DermRach (Rafael)
+// Website: mundopauta.com.br
+
+public class LessonRemoveFile
+{
+	int opt;
+
+	public Lesson()
+	{
+		opt = 0;
+	}
+	
+	boolean verifyValueBoolean(int valueBoolean)
+	{
+		boolean flagOption = false;
+		if (opt == 1)
+		{
+			flagOption = true;
+		} else if (opt == 0)
+		{
+			flagOption = false;
+		} else
+		{
+			flagOption = false;
+		}
+
+		return flagOption;
+	}
+
+	public static void main (String[]args)
+	{
+		LessonRemoveFile ln = new LessonRemoveFile();
+		File file = new File("Devlog.txt");
+		Scanner optionFile = new Scanner(System.in);
+		ln.opt = optionFile.nextInt();
+		
+		if (ln.verifyValueBoolean(ln.opt))
+		{
+			file.delete();
+			System.out.println("O arquivo " + file.getName() + " foi removido.");
+		} else
+		{
+			System.out.println("O arquivo " + file.getName() + " não foi removido.");
+		}
+	}
+}
