@@ -8,7 +8,7 @@ import java.io.IOException;
 // Autor: DermRach (Rafael)
 // Website: mundopauta.com.br
 
-public class Lesson
+public class LessonFileOne
 {
 	public static void main (String[]args)
 	{
