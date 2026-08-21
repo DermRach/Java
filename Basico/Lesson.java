@@ -1,0 +1,30 @@
+import java.io.File;
+import java.io.IOException;
+
+// 08:42 21/08/2026
+// Sem IDE específica
+// Criação de arquivo
+// Versão 1.0
+// Autor: DermRach (Rafael)
+// Website: mundopauta.com.br
+
+public class Lesson
+{
+	public static void main (String[]args)
+	{
+		try {
+			File file = new File("Devlog.txt");
+			if (file.createNewFile())
+			{
+				System.out.println("O arquivo " + file.getName() + " foi criado.");
+			} else
+			{
+				System.out.println("O arquivo já existia.");
+			}
+		} catch (IOException e)
+		{
+			System.out.println("Ocorreu um erro inesperado de criação");
+			e.printStackTrace();
+		}
+	}
+}
