@@ -1,3 +1,11 @@
+// 01:29 22/08/2026
+// Sem IDE específica
+// Definição de constructor com argumentos
+// Versão 1.0
+// Autor: DermRach (Rafael)
+// Website: mundopauta.com.br
+
+
 public class LessonConstructorArgs
 {
 	String name;
