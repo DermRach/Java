@@ -11,7 +11,7 @@ public class LessonConstructorArgs
 	String name;
 	int age;
 	
-	public Lesson(String tname, int tage)
+	public LessonConstructorArgs(String tname, int tage)
 	{
 		name = tname;
 		age = tage;
