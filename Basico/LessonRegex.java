@@ -2,7 +2,7 @@ import com.dermrach.PatternSearch;
 
 // 07:57 28/08/2026
 // Sem IDE específica
-// Program Pasta "Packages" com o nome PatternSearch
+// Program Pasta "Pacotes" com o nome PatternSearch
 // Utiliza Expressões Regulares 
 // Versão 1.0
 // Autor: DermRach (Rafael)
